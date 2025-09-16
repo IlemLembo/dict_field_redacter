@@ -1,0 +1,36 @@
+build/
+*.pyc
+__pycache__/
+dist/
+*.egg-info
+.eggs/
+.env/
+.venv/
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.pyd
+
+# Installer logs
+debug.log
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
