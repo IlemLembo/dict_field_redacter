@@ -15,6 +15,5 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'colorama>=0.4.6',
     ],
 )
