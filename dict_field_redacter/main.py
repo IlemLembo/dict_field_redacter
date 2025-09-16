@@ -1,4 +1,4 @@
-from models import DictFieldRedacter
+from .models import DictFieldRedacter
 
 
 print(DictFieldRedacter.help)

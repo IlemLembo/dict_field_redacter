@@ -1,6 +1,6 @@
 # models.py
 # This file contains the DictFieldRedacter class which is responsible for redacting specified fields in a dictionary.
-from utils import __sanitize__, __loose_sanitize__
+from .utils import __sanitize__, __loose_sanitize__
 class DictFieldRedacter():
     """
     A class to redact specified fields in a dictionary by replacing their values with a placeholder.
