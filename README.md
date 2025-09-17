@@ -33,10 +33,10 @@ test_data = {
         }
     },
 }
-from dict_field_redacter import DICT_FIELD_REDACTER
+from dict_field_redacter import DictFieldRedacter
 import json
 fields_to_redact = ["email", "password", "secret", "cvv", "pin", "number"]
-redacter = DICT_FIELD_REDACTER(fields_to_redact, maskWith="Redacted") # Vous pouvez personnaliser le placeholder avec une valeur de votre choix
+redacter = DictFieldRedacter(fields_to_redact, maskWith="Redacted") # Vous pouvez personnaliser le placeholder avec une valeur de votre choix
 # La redaction en mode strict (seuls les champs spécifiés sont redacted, (ceux qui ne sont pas strictement dans la liste restent inchangés))
 redacted = redacter.sanitize(test_data, mode="loose")
 print(json.dumps(redacted, indent=4))
@@ -96,10 +96,10 @@ test_data = {
         }
     },
 }
-from dict_field_redacter import DICT_FIELD_REDACTER
+from dict_field_redacter import DictFieldRedacter
 import json
 fields_to_redact = ["email", "password", "secret", "cvv", "pin", "number"]
-redacter = DICT_FIELD_REDACTER(fields_to_redact, placeHolder="Redacted") # You can customize the placeholder
+redacter = DictFieldRedacter(fields_to_redact, placeHolder="Redacted") # You can customize the placeholder
 # 
 redacted = redacter.sanitize(test_data, mode="loose")
 print(json.dumps(redacted, indent=4))

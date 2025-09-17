@@ -8,7 +8,7 @@ with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 setup(
     name='dict_field_redacter',
-    version='0.1.2',
+    version='0.1.3',
     packages=find_packages(),
     description='dict-field-redacter: A utility to redact sensitive fields in dictionaries. Easily sanitize your data by masking fields like passwords, tokens, secrets and more... Good for Log Sanitization, Data Privacy, and Security.',
     long_description=long_description, 
